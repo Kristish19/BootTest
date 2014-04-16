@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"><!--для отображения русс.яз-->
+    <title>BookFinder</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../css/mystyle.css" rel="stylesheet" media="screen"> 
+     <!--подключаем jquery-->
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">BookFinder</a>
+            
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+             <form class="navbar-form pull-left">
+                 <input class="span2" type="text" placeholder="Поиск">
+              </form> 
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Книги <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Новинки</a></li>
+                  <li><a href="#">Популярное</a></li>
+                   <li><a href="#">A-Я</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Авторы <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Популярные</a></li>
+                   <li><a href="#">A-Я</a></li>
+                </ul>
+              </li>
+            </ul>
+             
+             
+          
+              <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Эл. почта">
+              <input class="span2" type="password" placeholder="Пароль">
+              <button type="submit" class="btn">Войти</button>
+               <button type="submit" class="btn btn_registr">Регистрация</button>
+            </form>
+          </div><!--/.nav-collapse -->
+    </div>
+ </div>
+</div>
+    
+<div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>BookFinder</h1>
+        <p>Здесь найдется любая книга</p>
+      </div>
+{% block content %}
+   
+<!-- Example row of columns -->
+<div class="row">
+     <div class="span4 pagination-centered">
+          <img src="../my_img/{{find_book.image}}" alt="обложка" width="200" height="300"> 
+            <!--звездочки-->
+            <div class="exemple4" data-average="10" data-id="4"></div>
+        </div>
+        <div class="span6 pagination-centered">
+           <h3>{{found_book_name}}</h3>
+           <h4>{{found_author_name}}</h4>
+           <h6 align="justify">{{found_book.about_book}}</h6>
+<hr>
+<h4>ОТЗЫВЫ</h4>     
+<hr>
+  <div class="comm">
+      {% for comm in bookComm %}
+     <div class=" avatar">
+          <img src="../my_img/{{comm.user.ava}}" > 
+    </div>
+       <div class="span2 my_name ">{{comm.user.name}}</div>
+      <div class="span2 my_data ">{{comm.data}}</div>
+      <div class="span4 comm_text">{{comm.text}}</div>
+      {% end for %}
+  </div>  
+</div>   
+</div>
+{% endblock content %}
+
+     <hr>
+    <footer>
+        <p>&copy; PurPur</p>
+      </footer>
+
+    </div> <!-- /container -->      
+</body>
+</html>

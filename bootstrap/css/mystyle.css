@@ -1,0 +1,148 @@
+@import "bootstrap.css";
+
+.navbar {
+  .navbar-inner{
+    background-color: #2c2c2c;
+    background-image: none;
+  }
+}
+
+.btn {
+    /*сделаем кнопки более округлыми
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;*/
+    background: #81e4c0;
+}
+.btn:hover{/*при наведении на кнопку*/
+    color: white;/*цвет текста внутри кнопки*/
+    /*сделаем кнопки более округлыми
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;*/
+    background: #81e4c0;
+}
+
+.btn_registr{
+background: #99CCFF;}
+
+.btn_registr:hover{
+ color: white;
+background: #99CCFF;}
+
+.hero-unit{/*сюда вставить картинку*/
+    background-image:url(../my_img/original.png);
+   
+    
+}
+.hero-unit h1{
+    
+    color: #81e4c0;
+}
+.hero-unit p{
+    color: white;
+}
+body h4{
+    color:#81e4c0;
+}
+
+/*поле для ввода комментария*/
+textarea, .uneditable-input {
+    width: 420px;
+}
+
+.comm{
+background-color:pink;
+margin: 10px;
+}
+
+.my_data{
+color:#b5b5b5;
+}
+
+.my_name{
+font-size: 11pt;
+color:#81e4c0;
+}
+
+.avatar{ /* селектор для класса avatar */
+    margin:10px;
+    float: left; /* прижимаемся к левому краю, обтекание справа */
+    background: #fff; /* фон */
+    width: 50px; /* ширина */
+    height: 50px; /* высота */
+    /*padding: 5px; /* внутренние отступы(верх, право, низ, лево) */
+   /* border: 1px solid #999; /* граница(ширина, тип, цвет) */
+    border-radius: 50%; /*скругление равно 50 процентам от общей ширины, фактически 25 пикселей, вот и круг получили(ещё есть с префиксом -moz и -o) */
+   
+}
+.avatar img{ /* селектор для картинки, которая "внутри" класса avatar */
+    display: block; /* картинка выводится как блок, по ширине будет равен родителю(диву в котором находится) */
+    width: 100%; /* ширина 100% */
+    border: 0; /* граница нулевая */
+    margin: 0; /* внешний отступ отстутствует */
+    border-radius: 50%; /* читай выше */
+}
+
+.comm_text{
+text-align: left;
+font-size: 9pt;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 10px;
+}
+
+.btn_change_photo{
+margin-bottom:40px;
+margin-left: 5px;
+}
+
+/*диалоговое окно загрузки*/
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 999px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+.my_h5{
+    margin-top: 20px;
+}
+.avatar_mini {
+    margin:10px;
+    float: left; /* прижимаемся к левому краю, обтекание справа */
+    background: #fff; /* фон */
+    width: 24px; /* ширина */
+    height: 24px; /* высота */
+    /*padding: 5px; /* внутренние отступы(верх, право, низ, лево) */
+   /* border: 1px solid #999; /* граница(ширина, тип, цвет) */
+    border-radius: 50%; /*скругление равно 50 процентам от общей ширины, фактически 25 пикселей, вот и круг получили(ещё есть с префиксом -moz и -o) */
+   
+}
+.avatar_mini img{ /* селектор для картинки, которая "внутри" класса avatar */
+    display: block; /* картинка выводится как блок, по ширине будет равен родителю(диву в котором находится) */
+    width: 100%; /* ширина 100% */
+    border: 0; /* граница нулевая */
+    margin: 0; /* внешний отступ отстутствует */
+    border-radius: 50%; /* читай выше */
+}
+
+.h5_for_myname {
+    color:white;
+}
+
+.h5_for_book_name {
+    color:#766e6e;
+}

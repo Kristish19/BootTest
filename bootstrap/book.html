@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"><!--для отображения русс.яз-->
+    <title>BookFinder</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/mystyle.css" rel="stylesheet" media="screen"> 
+     <!--подключаем jquery-->
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    
+   <!-- JS to add -->
+<script type="text/javascript">
+  $(document).ready(function(){
+	$(".exemple4").jRating({
+	  isDisabled : true
+	});
+  });
+</script>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">BookFinder</a>
+            
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+            <form class="navbar-form pull-left">
+              <input class="span2" type="text" placeholder="Поиск">
+            </form>
+             
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Книги <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Новинки</a></li>
+                  <li><a href="#">Популярное</a></li>
+                  <li><a href="#">Прочитано</a></li>
+                   <li><a href="#">Любимое</a></li>
+                   <li><a href="#">A-Я</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Авторы <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Популярные</a></li>
+                   <li><a href="#">Любимые</a></li>
+                   <li><a href="#">A-Я</a></li>
+                    <li><a href="#">Добавить</a></li>
+                </ul>
+              </li>
+             <li><a href="#contact">Отзывы</a></li>
+             <li><a href="#contact">Друзья</a></li>
+             <li><a href="#contact">Настройки</a></li>
+            <li>
+                <div class="span2 avatar_mini">
+                     <img src="../my_img/ava.jpg" width="20" height="20">
+                    <div class="rateit"></div>
+                </div>
+            </li>
+            <li><h5 class="h5_for_myname">MyName</h5></li>
+          </ul>
+              
+          
+            <form class="navbar-form pull-right">
+             <button type="submit" class="btn">Выход</button>
+            </form>
+          </div><!--/.nav-collapse -->
+    </div>
+ </div>
+</div>
+    
+<div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>BookFinder</h1>
+        <p>Здесь найдется любая книга</p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span4 pagination-centered">
+          <img src="../my_img/book_o.jpg" alt="обложка" width="200" height="300"> 
+            <!--звездочки-->
+            <div class="exemple4" data-average="10" data-id="4"></div>
+        </div>
+        <div class="span6 pagination-centered">
+           <h3>Название книги</h3>
+           <h4>Автор Автор</h4>
+           <h6 align="justify">"Облачный атлас" подобен зеркальному лабиринту, в котором перекликаются, наслаиваясь друг на друга, шесть голосов: нотариуса середины девятнадцатого века, возвращающегося в США из Австралии; молодого композитора, вынужденного торговать душой и телом в Европе между мировыми войнами; журналистки в Калифорнии 1970-х, раскрывающей корпоративный заговор; мелкого издателя - нашего современника, умудрившегося сорвать банк на бандитской автобиографии "Удар кастетом" и бегущего от кредиторов; клона-прислуги из предприятия быстрого питания в Корее - стране победившего киберпанка; и гавайского козопаса на закате цивилизации. 
+
+Впервые на русском - новый монументальный шедевр от автора знаменитого "Сна № 9", также вошедший в шортлист Букеровской премии. 
+
+"В "Облачном атласе" Митчелл демонстрирует чудеса писательского мастерства. Это в буквальном смысле завораживающая книга."
+Лоуренс Норфолк
+
+"Облачный атлас" - книга-загадка. Структуру этого блестящего романа - поразительно виртуозного, но в то же время безмерно человечного, если не сказать трогательного - можно уподобить матрешке. Ни разу в жизни я не читал чего-либо подобного, и я счастлив, что мне довелось пожить в сотворенных Митчеллом мирах..."
+Майкл Чабон
+
+"Говорят, что история повторяется дважды: первый раз как трагедия, второй раз как фарс. Дэвид Митчелл добавляет еще несколько итераций: конспирологический триллер, киберпанковская антиутопия, эпистолярный плутовской роман... В "Облачном атласе" Митчелл будто играет с читателем в классики, мастерски перескакивая из эпохи в эпоху и от стиля к стилю."</h6>
+<hr>
+<h4>ОТЗЫВЫ</h4>     
+<hr>
+  <div class="comm">
+     <div class=" avatar">
+          <img src="../my_img/ava.jpg" > 
+    </div>
+       <div class="span2 my_name ">Имя пользователя</div>
+      <div class="span2 my_data ">дд месяц в чч:мм</div>
+      <div class="span4 comm_text">
+     Говорят, что история повторяется дважды: первый раз как трагедия, второй раз как фарс. Дэвид Митчелл добавляет еще несколько итераций: конспирологический триллер, киберпанковская антиутопия, эпистолярный плутовской роман... В "Облачном атласе" Митчелл будто играет с читателем в классики, мастерски перескакивая из эпохи в эпоху и от стиля к стилю.
+        
+      </div>
+  </div>  
+<div class="comm pagination-centered ">
+      <div class=" avatar">
+          <img src="../my_img/ava.jpg" > 
+     </div>
+       <div class="span2 my_name">Имя пользователя</div>
+      <div class="span2 my_data ">дд месяц в чч:мм</div>
+      <div class="span4 comm_text ">Говорят, что история повторяется дважды: первый раз как трагедия, второй раз как фарс. Дэвид Митчелл добавляет еще несколько итераций: конспирологический триллер, киберпанковская антиутопия, эпистолярный плутовской роман... В "Облачном атласе" Митчелл будто играет с читателем в классики, мастерски перескакивая из эпохи в эпоху и от стиля к стилю.
+        
+      </div>
+  </div>  
+<!--поле для ввода комментария-->
+<textarea  rows="5"  cols="100"></textarea>
+<button type="submit" class="btn">Оставить отзыв</button>
+</div>   
+</div>
+     
+
+      <hr>
+
+      <footer>
+        <p>&copy; PurPur</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/wp-content/themes/clear-theme/js/jquery.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-transition.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-alert.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-modal.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-dropdown.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-scrollspy.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-tab.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-tooltip.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-popover.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-button.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-collapse.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-carousel.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-typeahead.js"></script>
+
+      
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"><!--для отображения русс.яз-->
+    <title>BookFinder</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/mystyle.css" rel="stylesheet" media="screen"> 
+      <!--подключаем jquery-->
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+</head> 
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top"><!--начало навиг панели
+  navbar-inverse-чтобы навюпанель была темная
+  navbar-fixed-top-чтобы при прокрутке нав. панель всегда была сверху-->
+      <div class="navbar-inner">
+        <div class="container">
+          <!--далее ,чтобы появилась кнопочка,если изменяем размер экрана-->
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">BookFinder</a><!--не хотим скрывать логотип-->
+          
+          <div class="nav-collapse collapse"><!--все,что внутри этого классса будет скрываться-->
+              
+          <ul class="nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Книги <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Новинки</a></li>
+                  <li><a href="#">Популярное</a></li>
+                   <li><a href="#">A-Я</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Авторы <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Популярные</a></li>
+                   <li><a href="#">A-Я</a></li>
+                </ul>
+              </li>
+            </ul>
+              
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Эл. почта">
+              <input class="span2" type="password" placeholder="Пароль">
+              <button type="submit" class="btn">Войти</button>
+               <button type="submit" class="btn btn_registr">Регистрация</button>
+            </form>
+          </div><!--/.nav-collapse -->
+    </div>
+ </div>
+</div>
+    
+<div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>BookFinder</h1>
+        <p>Здесь найдется любая книга</p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span12 pagination-centered"><!--pagination-centered-класс,используемый для выравнивания-->
+          <h4>НАЙТИ КНИГУ</h4>
+              <input class="span6" type="text" placeholder="Поиск">
+        </div>
+       
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; PurPur</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/wp-content/themes/clear-theme/js/jquery.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-transition.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-alert.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-modal.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-dropdown.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-scrollspy.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-tab.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-tooltip.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-popover.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-button.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-collapse.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-carousel.js"></script>
+    <script src="/wp-content/themes/clear-theme/js/bootstrap-typeahead.js"></script>
+
+      
+</body>
+</html>
